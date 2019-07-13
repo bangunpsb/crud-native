@@ -156,11 +156,7 @@ if (isset($_GET['hapuspesan'])) {
 <?php
 if (isset($_GET['judul'])) {
     $judul = $_GET['judul'];
-    // $download = $koneksi->prepare("select from tes_d where idt='?'");
-    // $download->bindparam(1, $id);
-    // $download->execute();
-    // $data = $download->fetch();
-    $lokasi = "../../assets/word/";
+    $lokasi = "../assets/word/";
     $file = $lokasi . $_GET['judul'];
 
     if (file_exists($file)) {
